@@ -1,0 +1,60 @@
+
+.oscillation-stage {position:relative;aspect-ratio:1;}
+.oscillation-stage canvas,.oscillation-stage .oscillation-contours {position:absolute;inset:0;width:100%;height:100%;}
+.oscillation-stage [hidden],.oscillation-controls[hidden] {display:none!important;}
+.oscillation-stage .oscillation-contours {pointer-events:none;}
+.oscillation-controls {display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:14px;color:var(--secondary);font-size:11px;line-height:1.5;}
+.oscillation-controls button {font:inherit;color:var(--accent);background:transparent;border:1px solid var(--line);border-radius:5px;padding:5px 9px;}
+.oscillation-controls button:hover {border-color:var(--accent);}
+.oscillation-controls button:focus-visible {outline:2px solid var(--accent);outline-offset:3px;}
+
+.oscillation-speed {display:inline;color:var(--secondary);}
+
+.oscillation-mode-tabs {display:flex;gap:6px;justify-content:flex-start;margin-bottom:12px;}
+.oscillation-mode-tabs[hidden] {display:none!important;}
+.oscillation-mode-tabs button,.degree-submenu button {font:inherit;font-size:12px;background:transparent;border:1px solid var(--line);border-radius:5px;padding:5px 12px;color:var(--secondary);}
+.oscillation-mode-tabs button[aria-selected="true"] {background:var(--muted);border-color:var(--accent);color:var(--text);}
+.oscillation-mode-tabs button:focus-visible {outline:2px solid var(--accent);outline-offset:3px;}
+.editorial .oscillation-mode-label {margin:12px 0 0;font-size:12px;line-height:1.5;text-align:center;color:var(--secondary);}
+
+.oscillation-patterns{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:5px;margin-bottom:12px}.oscillation-patterns[hidden]{display:none!important}.oscillation-patterns button{font:inherit;font-size:11px;color:var(--secondary);background:transparent;border:1px solid var(--line);border-radius:5px;padding:5px 7px}.oscillation-patterns button[aria-pressed="true"]{color:var(--text);border-color:var(--accent);background:var(--muted)}.oscillation-patterns button:disabled{opacity:.3;cursor:not-allowed}.oscillation-patterns button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.stellar-illustration .oscillation-red{color:#ff858d}.stellar-illustration .oscillation-blue{color:#499fec}
+
+.stellar-illustration [hidden]{display:none!important}.editorial .stellar-view-title{font-family:inherit;font-size:15px;line-height:1.4;font-weight:500;letter-spacing:0;margin:0 0 14px;color:var(--text)}.surface-caption a{color:inherit}.oscillation-mode-tabs{flex-wrap:wrap}
+
+.oscillation-stage .solar-surface-video{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain}
+
+.stellar-illustration{display:grid;grid-template-areas:"views" "degrees" "patterns" "stage" "label" "caption" "spectrum" "controls"}.stellar-view-title{grid-area:title;min-height:42px}.oscillation-mode-tabs{grid-area:views}.oscillation-patterns{grid-area:patterns}.oscillation-stage{grid-area:stage}.oscillation-mode-label{grid-area:label;min-height:36px}.oscillation-controls{grid-area:controls}.stellar-illustration figcaption{grid-area:caption}
+
+.oscillation-stage .solar-surface-canvas{position:absolute;inset:0;width:100%;height:100%;}
+
+.asteroseismic-menu{position:relative;display:flex;align-items:center;gap:6px}.degree-submenu{display:flex;align-items:center;gap:6px;white-space:nowrap}
+
+.observational-panel{grid-area:stage;min-width:0}.show-observations .oscillation-stage{display:none}.observational-panel canvas{display:block;width:100%;height:auto}.kepler-comparison{border:0;margin-top:0;padding-top:0;text-align:center}.kepler-comparison h4{font-size:14px;font-weight:500;margin:0 0 20px;color:var(--text)}.kepler-comparison img{display:block;width:100%;height:auto}.editorial .observation-note{font-size:11px;line-height:1.6;color:var(--secondary);margin:8px 0 16px;text-align:left}.editorial .observation-panel-label{font-size:12px;color:var(--accent);margin:0 0 8px;text-align:center}
+
+.degree-submenu{grid-area:degrees;margin-bottom:10px}.multiplet-panel{grid-area:spectrum;min-width:0}.multiplet-spectrum{display:block;width:100%;height:auto}.editorial .multiplet-note{font-size:10px;line-height:1.5;color:var(--secondary);margin:4px 0 10px}
+
+.degree-submenu button[aria-selected="true"]{background:var(--muted);border-color:var(--accent);color:var(--text)}.degree-submenu button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.stellar-illustration .oscillation-mode-label{display:none}.editorial .hero-concept.stellar-illustration .oscillation-caption{border-top:0;margin-top:12px;padding-top:0;padding-bottom:16px;border-bottom:1px solid var(--line)}
+
+.lightcurve-animation{display:block;width:100%;aspect-ratio:729/583;border:0}.photometry-connection{display:block;width:100%;height:auto;margin:-20px 0 3px}
+
+.editorial .observing-duration{font-size:12px;line-height:1.5;color:var(--secondary);text-align:center;margin:0 0 8px}.observational-panel>.observation-panel-label{margin-bottom:4px}.photometry-connection{margin:-8px 0 0}
+
+.editorial .observational-panel .observation-note{font-size:13px}.editorial .observational-panel .observation-panel-label,.editorial .observing-duration{font-size:13px}
+
+.editorial .observational-panel .observation-note,.editorial .observational-panel .observation-panel-label,.editorial .observing-duration{font-size:15px}
+
+.lightcurve-animation{clip-path:inset(0 1px);outline:0;box-shadow:none}
+
+.editorial .multiplet-note{font-size:12px;line-height:1.6}
+
+.pixel-flux-plot{border:0;outline:0;box-shadow:none;background:transparent;max-width:100%}.observational-panel{min-width:0}
+
+.kepler-comparison .lightcurve-animation{clip-path:inset(2px);border:0!important;outline:0!important;box-shadow:none!important}
+
+.editorial .hero-copy .research-footnotes{font-size:12px;line-height:1.6;color:var(--secondary);margin:-12px 0 24px;padding-left:18px}.research-footnotes li{margin:5px 0;scroll-margin-top:24px}.hero-copy .lead sup{font-size:.65em;line-height:0;margin-left:2px}.hero-copy .lead sup a{text-decoration:none}
+
+.editorial .contact .contact-socials{display:flex;align-items:center;gap:20px}.contact-socials a{display:inline-flex;color:var(--accent);padding:4px}.contact-socials a:hover{color:var(--text)}.contact-socials svg{display:block}

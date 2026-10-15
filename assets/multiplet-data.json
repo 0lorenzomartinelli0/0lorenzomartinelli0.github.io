@@ -1,0 +1,35 @@
+{
+  "modes": [
+    {
+      "l": 0,
+      "n": 22,
+      "frequency_uHz": 2919.314123095749,
+      "linewidth_uHz": 0.8995493977864102,
+      "splitting_uHz": 0.0
+    },
+    {
+      "l": 1,
+      "n": 22,
+      "frequency_uHz": 2980.457321241207,
+      "linewidth_uHz": 0.9954514685152951,
+      "splitting_uHz": 0.42130929386418986
+    },
+    {
+      "l": 2,
+      "n": 21,
+      "frequency_uHz": 2912.584658584406,
+      "linewidth_uHz": 0.888994346675099,
+      "splitting_uHz": 0.42062097000630694
+    }
+  ],
+  "height_ppm2_per_uHz": 17,
+  "NSR_ppm_sqrt_hour": 15,
+  "white_background_ppm2_per_uHz": 1.62,
+  "inclination_deg": 78,
+  "height_convention": "H=17 per multiplet before normalized inclination weights E_lm. All degrees use the same total height scale; no photometric degree visibility factor added.",
+  "noise": "One-sided white PSD B=2 NSR\u00b2*3600/1e6. Exponential random ordinates with mean B+sum Lorentzians; independent bins at 0.04 microHz, equivalent 289.35 day uninterrupted series. No granulation background included in these narrow windows.",
+  "linewidth_source": "Chaplin et al. 1997, MNRAS 288, 623, Table 1; linearly interpolated weighted solar FWHM averages in frequency, not linewidths measured for this model.",
+  "linewidth_url": "https://academic.oup.com/mnras/article/288/3/623/1151428",
+  "rotation": "First-order radial GYRE rotation kernel integrated against the area-weighted shell average of GONG 1995\u20132009 rotation. Core below 0.3 R holds the 0.3 R rate. This shell-averaged approximation omits latitudinal splitting differences; not a full 2D inversion.",
+  "rotation_kernel_url": "https://doi.org/10.1051/0004-6361/201220211"
+}
