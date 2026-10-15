@@ -160,7 +160,16 @@
     ready=false;phase=0;describeMode();update();
     if(visible&&!motion.matches)initialize();
   }
+  let panelCycleTimer;
+  function restartPanelCycle(){
+    clearTimeout(panelCycleTimer);
+    panelCycleTimer=setTimeout(()=>{
+      if(!document.hidden&&visible){selectMode(selected==='surface'?'observations':selected==='observations'?'asteroseismic':'surface');}
+      else restartPanelCycle();
+    },30000);
+  }
   function selectMode(key) {
+    restartPanelCycle();
     if(key==='asteroseismic')key=lastDegree;
     if(!['surface','observations','l0','l1','l2'].includes(key)||key===selected)return;
     if(key==='l0'||key==='l1'||key==='l2')lastDegree=key;
@@ -175,6 +184,7 @@
     travelling=next;resetField();
   }));
   describeMode();
+  restartPanelCycle();
   tabs.forEach((tab,index) => {
     tab.addEventListener('click',()=>selectMode(tab.dataset.mode));
     tab.addEventListener('keydown',event => {
